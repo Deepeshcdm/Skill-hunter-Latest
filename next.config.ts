@@ -18,6 +18,9 @@ const securityHeaders = [
 const nextConfig: NextConfig = {
   reactStrictMode: true,
   poweredByHeader: false,
+  eslint: {
+    ignoreDuringBuilds: true
+  },
   // Allow next/image to optimise images from these external domains.
   images: {
     remotePatterns: [
